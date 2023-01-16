@@ -1,0 +1,4 @@
+{
+  "cluster_name": "{{ cookiecutter.project_slug }}",
+  "cluster_capacity_provider":"FARGATE"
+}
