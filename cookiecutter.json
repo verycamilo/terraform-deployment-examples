@@ -1,4 +1,5 @@
 {
-  "cluster_name": "",
+  "project_slug": "terraform",
+  "cluster_name": "cluster_name",
   "cluster_capacity_provider":"FARGATE"
 }
