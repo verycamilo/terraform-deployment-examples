@@ -1,6 +1,7 @@
 {
+  "__project_slug": "__project_slug",
+  "__provider_slug": "__provider_slug",
   "terraform_destination_folder": "terraform",
-  "project_slug": "project_slug",
-  "cluster_name": "{{cookiecutter.project_slug}}",
+  "cluster_name": "{{cookiecutter.__project_slug}}",
   "cluster_capacity_provider":"FARGATE"
 }
