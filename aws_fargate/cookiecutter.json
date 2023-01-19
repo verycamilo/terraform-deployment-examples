@@ -4,9 +4,11 @@
   "terraform_destination_folder": "terraform",
   "cluster_name": "{{cookiecutter.__project_slug | replace('_', '-')}}",
   "cluster_capacity_provider":"FARGATE",
-  "terraform_backend_bucket": "{{cookiecutter.__project_slug | replace('_', '-')}}",
+  "terraform_backend_bucket": "{{cookiecutter.__project_slug | replace('_', '-')}}-terraform-backend",
   "path_to_tfstate": "terraform.tfstate",
-  "dynamo_db_table_for_locking": "{{cookiecutter.__project_slug | replace('_', '-')}}-locks",
+  "dynamo_db_table_for_locking": "{{cookiecutter.__project_slug | replace('_', '-')}}-terraform-locks",
   "aws_role_arn": "arn:aws:iam::XXXXXXXXXXXX:role/cicd",
-  "aws_region": "us-east-1"
+  "aws_region": "us-east-1",
+  "service_name": "{{cookiecutter.__project_slug | replace('_', '-')}}"
+
 }
