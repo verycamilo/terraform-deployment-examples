@@ -2,6 +2,11 @@
   "__project_slug": "__project_slug",
   "__provider_slug": "__provider_slug",
   "terraform_destination_folder": "terraform",
-  "cluster_name": "{{cookiecutter.__project_slug}}",
-  "cluster_capacity_provider":"FARGATE"
+  "cluster_name": "{{cookiecutter.__project_slug | replace('_', '-')}}",
+  "cluster_capacity_provider":"FARGATE",
+  "terraform_backend_bucket": "{{cookiecutter.__project_slug | replace('_', '-')}}",
+  "path_to_tfstate": "terraform.tfstate",
+  "dynamo_db_table_for_locking": "{{cookiecutter.__project_slug | replace('_', '-')}}-locks",
+  "aws_role_arn": "arn:aws:iam::XXXXXXXXXXXX:role/cicd",
+  "aws_region": "us-east-1"
 }
